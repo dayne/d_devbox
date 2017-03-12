@@ -1,19 +1,23 @@
 name 'd_devbox'
-maintainer 'The Authors'
-maintainer_email 'you@example.com'
-license 'all_rights'
-description 'Installs/Configures d_devbox'
-long_description 'Installs/Configures d_devbox'
+maintainer 'Dayne Broderson'
+maintainer_email 'broderson@gmail.com'
+license 'MIT'
+description 'Installs/Configures a development box for Chef/Kitchen/Cloud'
+long_description 'Installs/Configures Chefdk, VirtualBox, Packer, Vagrant,
+    Atom editor, Habitat, and other key tools needed to get started hacking.'
 version '0.1.0'
 
-# The `issues_url` points to the location where issues for this cookbook are
-# tracked.  A `View Issues` link will be displayed on this cookbook's page when
-# uploaded to a Supermarket.
-#
-# issues_url 'https://github.com/<insert_org_here>/d_devbox/issues' if respond_to?(:issues_url)
+supports 'ubuntu'
+issues_url 'https://github.com/dayne/d_devbox/issues' if respond_to?(:issues_url)
+source_url 'https://github.com/dayne/d_devbox' if respond_to?(:source_url)
 
-# The `source_url` points to the development reposiory for this cookbook.  A
-# `View Source` link will be displayed on this cookbook's page when uploaded to
-# a Supermarket.
-#
-# source_url 'https://github.com/<insert_org_here>/d_devbox' if respond_to?(:source_url)
+# chefdk related
+depends 'atom', '~> 0.2.0'
+depends 'vagrant'
+depends 'habitat', '~> 0.2.0'
+depends 'terraform' #, '~> 1.0'
+depends 'chefdk'
+depends 'sbp_packer'
+
+# note: following have special branches to work - See Berksfile
+depends 'virtualbox', '~> 2.0'  # special branch
