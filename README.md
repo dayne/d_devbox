@@ -10,7 +10,7 @@ Turns an Ubuntu system into a hacking and development station with the following
  * includes the `winrm plugin`
 * [habitat](https://www.habitat.sh/)
 * [terraform](https://www.terraform.io/) - via [_my own branch_](https://github.com/dayne/chef-terraform/tree/zipfile_fix) of the [terraform cookbook](https://github.com/rosstimson/chef-terraform)
-* packer
+* [packer](https://www.packer.io/) - via [sbp_packer cookbook](https://github.com/schubergphilis/sbp_packer)
 
 #### Test Kitchen
 
