@@ -10,7 +10,7 @@ atom_apm 'file-icons'
 
 chef_dk 'default' do
   version node['chef_dk']['version']
-  action :install
+#  action :install
   not_if "/opt/chefdk/bin/chef --version | grep #{version}"
 end
 
