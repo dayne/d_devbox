@@ -19,6 +19,9 @@ include_recipe 'terraform'
 include_recipe 'sbp_packer'
 
 include_recipe 'vagrant'
+vagrant_plugin 'winrm'
 vagrant_plugin 'vagrant-winrm'
+vagrant_plugin 'winrm-fs'
+#vagrant_plugin 'vagrant-winrm-syncedfolders'
 
 hab_install 'install habitat'

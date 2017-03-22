@@ -5,7 +5,7 @@ license 'MIT'
 description 'Installs/Configures a development box for Chef/Kitchen/Cloud'
 long_description 'Installs/Configures Chefdk, VirtualBox, Packer, Vagrant,
     Atom editor, Habitat, and other key tools needed to get started hacking.'
-version '0.1.4'
+version '0.1.5'
 
 supports 'ubuntu'
 issues_url 'https://github.com/dayne/d_devbox/issues' if respond_to?(:issues_url)
