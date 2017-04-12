@@ -1,0 +1,76 @@
+DEPENDENCIES
+  chef-dk
+    git: https://github.com/RoboticCheese/chef-dk-chef
+    revision: 5d4a714a6c8190b632129c1da3a986e02519f370
+  d_devbox
+    path: .
+    metadata: true
+  terraform
+    git: https://github.com/rosstimson/chef-terraform
+    revision: 0a8cdc2fd667044e5ab360e1e0023b43a4827a03
+  virtualbox
+    git: https://github.com/dayne/virtualbox-cookbook
+    revision: 5f25e175180126d7b26395963b253399b721868a
+
+GRAPH
+  apache2 (3.3.0)
+  apt (6.1.0)
+  apt-chef (2.0.1)
+    apt (>= 0.0.0)
+  ark (2.2.1)
+    build-essential (>= 0.0.0)
+    seven_zip (>= 0.0.0)
+    windows (>= 0.0.0)
+  atom (0.2.0)
+    apt (>= 0.0.0)
+    homebrew (>= 0.0.0)
+  build-essential (7.0.3)
+    compat_resource (>= 12.16.3)
+    mingw (>= 1.1)
+    seven_zip (>= 0.0.0)
+  chef-dk (3.1.1)
+    apt-chef (~> 2.0)
+    chocolatey (~> 1.0)
+    dmg (~> 3.0)
+    homebrew (~> 2.1)
+    yum-chef (~> 2.0)
+  chocolatey (1.1.0)
+    windows (>= 1.38)
+  compat_resource (12.16.3)
+  d_devbox (0.1.10)
+    atom (>= 0.2.0)
+    habitat (>= 0.3.0)
+    sbp_packer (>= 1.4.7)
+    terraform (>= 1.0.1)
+    vagrant (>= 0.7.0)
+    virtualbox (>= 2.0.0)
+  dmg (3.1.1)
+  golang (1.7.0)
+  habitat (0.3.0)
+  homebrew (2.1.2)
+    build-essential (>= 2.1.2)
+  mingw (2.0.0)
+    seven_zip (>= 0.0.0)
+  ohai (5.0.3)
+  sbp_packer (1.4.7)
+    ark (>= 1.0.0)
+    golang (>= 1.7.0)
+  seven_zip (2.0.2)
+    windows (>= 1.2.2)
+  terraform (1.0.1)
+    ark (~> 2.0)
+    build-essential (~> 7.0)
+  vagrant (0.7.0)
+    dmg (>= 2.2.2)
+    windows (>= 1.38)
+  virtualbox (2.0.3)
+    apache2 (>= 0.0.0)
+    apt (>= 0.0.0)
+    dmg (>= 0.0.0)
+    windows (>= 0.0.0)
+    yum (~> 3.1)
+  windows (3.0.5)
+    ohai (>= 4.0.0)
+  yum (3.13.0)
+  yum-chef (2.0.1)
+    yum (>= 3.2)

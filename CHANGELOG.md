@@ -1,3 +1,10 @@
+# 0.1.10 - 2017-04-12
+
+* setting minimum version dependancy for all dependant cookbooks
+  * this fixes the tofu sadness with old terraform sliding in on `UAGINA` chef server
+* Also updating to 0.9.2 terraform as new default
+* bringing back Berksfile.log so I can track dependancy changes easier
+
 # 0.1.9 - 2017-04-12
 
 * getting ride of chef_dk for now in favor of manual dpkg install this
