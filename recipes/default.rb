@@ -8,12 +8,6 @@ include_recipe 'atom'
 atom_apm 'file-watcher'
 atom_apm 'file-icons'
 
-chef_dk 'default' do
-  version node['chef_dk']['version']
-#  action :install
-  not_if "/opt/chefdk/bin/chef --version | grep #{node['chef_dk']['version']}"
-end
-
 include_recipe 'virtualbox'
 include_recipe 'terraform'
 include_recipe 'sbp_packer'
@@ -25,3 +19,20 @@ vagrant_plugin 'winrm-fs'
 #vagrant_plugin 'vagrant-winrm-syncedfolders'
 
 hab_install 'install habitat'
+
+
+# got annoyed by the old chef_dk cookbook
+# using manual install for now
+version = node.default['chefdk']['version']
+remote_file ("/tmp/chefdk-#{version}_amd64.deb") do
+  source node.default['chefdk']['url']
+  owner 'root'
+  checksum node.default['chefdk']['checksum']
+end
+
+dpkg_package 'chefdk' do
+  only_if { File.exist?("/tmp/chefdk-#{version}_amd64.deb")}
+  source "/tmp/chefdk-#{version}_amd64.deb"
+  action [ :install, :upgrade ]
+end
+

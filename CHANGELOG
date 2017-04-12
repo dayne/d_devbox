@@ -1,3 +1,8 @@
+# 0.1.9 - 2017-04-12
+
+* getting ride of chef_dk for now in favor of manual dpkg install this
+makes it `just work` for both Ubuntu 16.10 and 16.04 my targets. 
+
 # 0.1.8 - 2017-04-12
 
 * Fix chef_dk `not_if` test to use `node['chef_dk']['version']`
