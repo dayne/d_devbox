@@ -1,5 +1,5 @@
 # 0.1.7 - 2017-04-12
 
 * chefdk 1.3.40
-* unlock habitate dependancy
+* unlock habitate and terraform dependancy
 * packer 1.0.0 expected now
