@@ -11,7 +11,7 @@ atom_apm 'file-icons'
 chef_dk 'default' do
   version node['chef_dk']['version']
 #  action :install
-  not_if "/opt/chefdk/bin/chef --version | grep #{version}"
+  not_if "/opt/chefdk/bin/chef --version | grep #{node['chef_dk']['version']}"
 end
 
 include_recipe 'virtualbox'
