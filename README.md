@@ -4,7 +4,7 @@ Turns an Ubuntu system into a hacking and development station with the following
 
 * [chefdk](https://downloads.chef.io/chefdk) - via [chef-dk cookbook](https://supermarket.chef.io/cookbooks/chef-dk)
 * [Atom Editor](https://atom.io) - via [atom cookbook](https://supermarket.chef.io/cookbooks/atom)
- * includes some key plugins: `file-watcher` and `file-icons`
+  * includes some key plugins: `file-watcher` and `file-icons`
 * [VirtualBox-5.1](https://www.virtualbox.org/) - via [_my own branch_](https://github.com/dayne/virtualbox-cookbook/tree/51update) of [virtualbox cookbook](https://supermarket.chef.io/cookbooks/virtualbox)
 * [vagrant](https://www.vagrantup.com/) - via [vagrant cookbook](https://supermarket.chef.io/cookbooks/vagrant)
   * includes the `winrm plugin`
