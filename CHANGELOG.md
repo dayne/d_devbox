@@ -1,3 +1,6 @@
+## 0.1.13 - 2017-08-25
+* added docker to mix
+
 ## 0.1.12 - 2017-05-03
 * update gitkraken to 2.5
 * update chefdk to 1.3.43

@@ -11,6 +11,7 @@ Turns an Ubuntu system into a hacking and development station with the following
 * [habitat](https://www.habitat.sh/)
 * [terraform](https://www.terraform.io/) - via [_my own branch_](https://github.com/dayne/chef-terraform/tree/zipfile_fix) of the [terraform cookbook](https://github.com/rosstimson/chef-terraform)
 * [packer](https://www.packer.io/) - via [sbp_packer cookbook](https://github.com/schubergphilis/sbp_packer)
+* [docker](http://docker.io/) -  via [docker_cookbook](http://docker.io/)
 
 #### Test Kitchen
 
