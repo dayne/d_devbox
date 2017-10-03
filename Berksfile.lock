@@ -37,7 +37,7 @@ GRAPH
   chocolatey (1.1.1)
     windows (>= 1.38)
   compat_resource (12.19.0)
-  d_devbox (0.1.12)
+  d_devbox (0.1.13)
     atom (>= 0.2.0)
     docker (~> 2.15.25)
     habitat (>= 0.3.0)
