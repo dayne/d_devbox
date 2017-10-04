@@ -36,3 +36,9 @@ dpkg_package 'chefdk' do
   action [ :install, :upgrade ]
 end
 
+
+# install latest docker:
+
+docker_installation 'default' do
+  action :create
+end

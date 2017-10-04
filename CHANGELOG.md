@@ -1,3 +1,9 @@
+## Unreleased
+
+## 0.1.13 - 2017-10-03
+* added docker to mix
+* Update vagrant (2.0.0), terraform (0.10.7), chefdk (1.6.1), and gitkraken (3.1.0)
+
 ## 0.1.12 - 2017-05-03
 * update gitkraken to 2.5
 * update chefdk to 1.3.43
