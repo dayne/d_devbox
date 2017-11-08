@@ -1,7 +1,8 @@
 DEPENDENCIES
-  chef-dk
-    git: https://github.com/RoboticCheese/chef-dk-chef
-    revision: 5d4a714a6c8190b632129c1da3a986e02519f370
+  atom
+    git: git@github.com:dayne/chef-atom.git
+    revision: 2fd6963345a447cc53977f52a5478cfe62d4094e
+    branch: relaxhomebrew
   d_devbox
     path: .
     metadata: true
@@ -14,28 +15,18 @@ DEPENDENCIES
 
 GRAPH
   apache2 (5.0.1)
-  apt (6.1.4)
-  apt-chef (2.0.1)
-    apt (>= 0.0.0)
+  apt (3.0.0)
   ark (2.2.1)
     build-essential (>= 0.0.0)
     seven_zip (>= 0.0.0)
     windows (>= 0.0.0)
-  atom (0.2.0)
-    apt (>= 0.0.0)
-    homebrew (>= 0.0.0)
+  atom (0.2.1)
+    apt (~> 3.0)
+    homebrew (< 5.0.0)
   build-essential (8.0.3)
     mingw (>= 1.1)
     seven_zip (>= 0.0.0)
-  chef-dk (3.1.1)
-    apt-chef (~> 2.0)
-    chocolatey (~> 1.0)
-    dmg (~> 3.0)
-    homebrew (~> 2.1)
-    yum-chef (~> 2.0)
-  chocolatey (1.2.1)
-    windows (>= 1.38)
-  d_devbox (0.1.13)
+  d_devbox (0.1.15)
     atom (>= 0.2.0)
     docker (>= 2.15.25)
     habitat (>= 0.3.0)
@@ -44,11 +35,10 @@ GRAPH
     vagrant (>= 0.7.0)
     virtualbox (>= 2.0.0)
   dmg (3.1.1)
-  docker (2.16.0)
+  docker (2.16.4)
   golang (1.7.0)
-  habitat (0.34.0)
-  homebrew (2.1.2)
-    build-essential (>= 2.1.2)
+  habitat (0.38.0)
+  homebrew (4.2.0)
   mingw (2.0.1)
     seven_zip (>= 0.0.0)
   ohai (5.2.0)
@@ -69,8 +59,6 @@ GRAPH
     dmg (>= 0.0.0)
     windows (>= 0.0.0)
     yum (~> 3.1)
-  windows (3.1.3)
+  windows (3.3.0)
     ohai (>= 4.0.0)
   yum (3.13.0)
-  yum-chef (2.0.1)
-    yum (>= 3.2)
