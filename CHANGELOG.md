@@ -1,6 +1,10 @@
 =======
 ## Unreleased
 
+## 0.1.15 - 2017-10-03
+* update terraform (0.10.8), chefdk (2.3.4-1), vagrant (2.0.1)
+* pull in branchs atom to get out from under old homebrew dep.
+
 ## 0.1.14 - 2017-10-03
 * minor update to latest version of dependancies (berks update)
 

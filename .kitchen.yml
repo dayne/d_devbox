@@ -4,7 +4,8 @@ driver:
 
 provisioner:
   name: chef_zero
-  require_chef_omnibus: 12.21.4
+  #require_chef_omnibus: 12.21.4
+  require_chef_omnibus: 13.5.3
 
   # You may wish to disable always updating cookbooks in CI or other testing environments.
   # For example:
@@ -16,7 +17,7 @@ verifier:
   name: inspec
 
 platforms:
-  - name: ubuntu-16.10
+  - name: ubuntu-16.04
 
 suites:
   - name: default
