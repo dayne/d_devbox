@@ -1,6 +1,10 @@
 =======
 ## Unreleased
 
+## 0.1.16 - 2018-02-04
+* update gitkraken 3.3.4, vagrant 2.0.2, chefdk 2.4.17
+* remove vagrant winrm plugins from being installed
+
 ## 0.1.15 - 2017-10-03
 * update terraform (0.10.8), chefdk (2.3.4-1), vagrant (2.0.1)
 * pull in branchs atom to get out from under old homebrew dep.
