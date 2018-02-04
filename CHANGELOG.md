@@ -1,6 +1,9 @@
 =======
 ## Unreleased
 
+## 0.1.17 - 2018-02-04
+* basic `berks update` to sync up with latest
+
 ## 0.1.16 - 2018-02-04
 * update gitkraken 3.3.4, vagrant 2.0.2, chefdk 2.4.17
 * remove vagrant winrm plugins from being installed
