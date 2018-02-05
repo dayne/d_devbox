@@ -3,6 +3,7 @@
 
 ## 0.1.17 - 2018-02-04
 * basic `berks update` to sync up with latest
+* using my own chef13 branch for terrform chef cookbook
 
 ## 0.1.16 - 2018-02-04
 * update gitkraken 3.3.4, vagrant 2.0.2, chefdk 2.4.17

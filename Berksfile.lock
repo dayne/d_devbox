@@ -7,8 +7,9 @@ DEPENDENCIES
     path: .
     metadata: true
   terraform
-    git: https://github.com/rosstimson/chef-terraform
-    revision: 34626fe79cf5e11edf058825ab0c894393e449f8
+    git: https://github.com/dayne/chef-terraform
+    revision: 82f1ac3b35945dd3d49d7dd2a29c6e7de9e93119
+    branch: chef13
   virtualbox
     git: https://github.com/dayne/virtualbox-cookbook
     revision: 5f25e175180126d7b26395963b253399b721868a
@@ -47,8 +48,8 @@ GRAPH
     golang (>= 1.7.0)
   seven_zip (2.0.2)
     windows (>= 1.2.2)
-  terraform (1.0.2)
-    ark (~> 2.0)
+  terraform (1.0.3)
+    ark (>= 2.0.0)
     build-essential (~> 8.0)
   vagrant (0.7.1)
     dmg (>= 2.2.2)
