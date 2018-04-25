@@ -1,7 +1,7 @@
 DEPENDENCIES
   atom
     git: git@github.com:dayne/chef-atom.git
-    revision: 2fd6963345a447cc53977f52a5478cfe62d4094e
+    revision: 86b6eda6ce9c22a3ea5ee7e1e191bc5bc7423a21
     branch: relaxhomebrew
   d_devbox
     path: .
@@ -16,18 +16,18 @@ DEPENDENCIES
 
 GRAPH
   apache2 (5.0.1)
-  apt (3.0.0)
-  ark (2.2.1)
+  apt (6.1.4)
+  ark (3.1.0)
     build-essential (>= 0.0.0)
     seven_zip (>= 0.0.0)
     windows (>= 0.0.0)
-  atom (0.2.1)
-    apt (~> 3.0)
+  atom (0.2.2)
+    apt (> 3.0.0)
     homebrew (< 5.0.0)
   build-essential (8.0.4)
     mingw (>= 1.1)
     seven_zip (>= 0.0.0)
-  d_devbox (0.1.16)
+  d_devbox (0.1.17)
     atom (>= 0.2.0)
     docker (>= 2.15.25)
     habitat (>= 0.3.0)

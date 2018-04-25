@@ -1,6 +1,6 @@
-default['vagrant']['version'] = '2.0.2'
-default['terraform']['version'] = '0.11.3'
-default['chefdk']['version'] = '2.4.17'
+default['vagrant']['version'] = '2.0.4'
+default['terraform']['version'] = '0.11.7'
+default['chefdk']['version'] = '2.5.3'
 
 default['chefdk']['url'] = 'https://packages.chef.io/files/stable/chefdk/2.4.17/debian/8/chefdk_2.4.17-1_amd64.deb'
 default['chefdk']['checksum'] = 'f5b8cf5b8fb03f8bc4d915fddf82bfc6be66e45d3a7e9a9a11e6cd6cac5a4031'
