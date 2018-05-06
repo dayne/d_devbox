@@ -1,10 +1,14 @@
 =======
 ## Unreleased
 
+## 0.1.19 - 2018-05-06
+* actually update to chefdk 2.5.3 (fixed URLs and sha)
+* upgrade to vagrant 2.1.0
+
 ## 0.1.18 - 2018-04-25
 * update vagrant to 2.0.4 (from 2.0.2)
 * update terraform to 0.11.7 (from 0.11.3)
-* update chefdk to 2.5.3 (from 2.4.17)
+* update chefdk to 2.5.3 (from 2.4.17) (failed to update url)
 
 ## 0.1.17 - 2018-02-04
 * basic `berks update` to sync up with latest
