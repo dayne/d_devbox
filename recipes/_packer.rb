@@ -1,11 +1,15 @@
 #
 # install packer manually
 #
-url = 'https://releases.hashicorp.com/packer/1.2.3/packer_1.2.3_linux_amd64.zip'
+
+ver = node['packer']['version']
+url = "https://releases.hashicorp.com/packer/#{ver}/packer_#{ver}_linux_amd64.zip"
 file = File.basename(url)
 filep = "/usr/local/src/#{file}"
 # curl filep | sha256sum
-file_checksum = '822fe76c2dfe699f187ef8c44537d10453a1545db620e40b345cf6991a690f7d'
+file_checksum = node['packer']['checksum']
+# '822fe76c2dfe699f187ef8c44537d10453a1545db620e40b345cf6991a690f7d'
+
 remote_file filep do
   source url
   action :create
