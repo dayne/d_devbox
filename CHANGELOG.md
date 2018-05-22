@@ -1,6 +1,10 @@
 =======
 ## Unreleased
 
+## 0.1.20 - 2018-05-22
+- remove use of sbd_packer cookbook in favor of manual packer install
+- update to chefdk 3.0.36
+
 ## 0.1.19 - 2018-05-06
 * actually update to chefdk 2.5.3 (fixed URLs and sha)
 * upgrade to vagrant 2.1.0

@@ -10,7 +10,8 @@ atom_apm 'file-icons'
 
 include_recipe 'virtualbox'
 include_recipe 'terraform'
-include_recipe 'sbp_packer'
+
+include_recipe 'd_devbox::_packer'
 
 include_recipe 'vagrant'
 #vagrant_plugin 'winrm'
