@@ -3,6 +3,8 @@
 # Recipe:: default
 #
 # Copyright:: 2017, The Authors, All Rights Reserved.
+node['apt']['compiletime'] = true if node[:instance_role] == 'vagrant'
+include_recipe 'apt'
 
 include_recipe 'atom'
 atom_apm 'file-watcher'

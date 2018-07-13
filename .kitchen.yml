@@ -22,7 +22,6 @@ suites:
   - name: default
     run_list:
       - recipe[d_devbox::default]
-      - recipe[d_devbox::gitkraken]
     verifier:
       inspec_tests:
         - test/smoke/default

@@ -1,6 +1,11 @@
 =======
 ## Unreleased
 
+## 0.2.0  - 2018-07-12
+- remove gitkraken, update chefdk to 3.1.0, update vagrant to 2.1.2
+- update virtualbox-cookbook dep to 2.1 to ensure VirtualBox 5.2 shows up
+- force apt update
+
 ## 0.1.20 - 2018-05-22
 - remove use of sbd_packer cookbook in favor of manual packer install
 - update to chefdk 3.0.36
