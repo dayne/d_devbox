@@ -17,7 +17,7 @@ describe command('hab --version') do
   its('stderr') { should eq '' }
 end
 
-describe package('VirtualBox-5.1') do
+describe package('VirtualBox-5.2') do
   it { should be_installed }
 end
 
@@ -35,7 +35,7 @@ end
 
 describe command('vagrant --version') do
   its('exit_status') { should eq 0 }
-  its('stdout') { should match '2.1.0' }
+  its('stdout') { should match '2.1.2' }
   its('stderr') { should match '' }
 end
 

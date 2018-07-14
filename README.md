@@ -5,11 +5,11 @@ Turns an Ubuntu system into a hacking and development station with the following
 * [chefdk](https://downloads.chef.io/chefdk) - via [chef-dk cookbook](https://supermarket.chef.io/cookbooks/chef-dk)
 * [Atom Editor](https://atom.io) - via [atom cookbook](https://supermarket.chef.io/cookbooks/atom)
   * includes some key plugins: `file-watcher` and `file-icons`
-* [VirtualBox-5.1](https://www.virtualbox.org/) - via [_my own branch_](https://github.com/dayne/virtualbox-cookbook/tree/51update) of [virtualbox cookbook](https://supermarket.chef.io/cookbooks/virtualbox)
+* [VirtualBox-5.2](https://www.virtualbox.org/) - via [my fork of the virtualbox cookbook own branch_](https://github.com/dayne/virtualbox-cookbook/)
 * [vagrant](https://www.vagrantup.com/) - via [vagrant cookbook](https://supermarket.chef.io/cookbooks/vagrant)
   * includes the `winrm plugin`
 * [habitat](https://www.habitat.sh/)
-* [terraform](https://www.terraform.io/) - via [_my own branch_](https://github.com/dayne/chef-terraform/tree/zipfile_fix) of the [terraform cookbook](https://github.com/rosstimson/chef-terraform)
+* [terraform](https://www.terraform.io/) - [terraform cookbook](https://github.com/haidangwa/chef-terraform)
 * [packer](https://www.packer.io/) - via [sbp_packer cookbook](https://github.com/schubergphilis/sbp_packer)
 * [docker](http://docker.io/) -  via [docker_cookbook](http://docker.io/)
 

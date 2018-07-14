@@ -1,6 +1,10 @@
 =======
 ## Unreleased
 
+## [0.2.1] - 2018-07-14
+- swap out my branch of the old terraform-cookbook for the new maintained at [hidangwa/chef-terraform](https://github.com/hidangwa/chef-terraform)
+- fix tests and remove gitkraken test expecation
+
 ## 0.2.0  - 2018-07-12
 - remove gitkraken, update chefdk to 3.1.0, update vagrant to 2.1.2
 - update virtualbox-cookbook dep to 2.1 to ensure VirtualBox 5.2 shows up

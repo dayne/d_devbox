@@ -6,10 +6,10 @@ DEPENDENCIES
   d_devbox
     path: .
     metadata: true
-  terraform
-    git: https://github.com/dayne/chef-terraform
-    revision: 82f1ac3b35945dd3d49d7dd2a29c6e7de9e93119
-    branch: chef13
+  gpg
+    git: https://github.com/sous-chefs/gpg
+    revision: 2f682a1406047e99351d184fe18fff035a0c856c
+    ref: 2f682a1
   virtualbox
     git: https://github.com/dayne/virtualbox-cookbook
     revision: 3a9b8681d3d3bee06d710cd5a75a4c065e194d21
@@ -37,15 +37,17 @@ GRAPH
     virtualbox (>= 2.1)
   dmg (4.1.1)
   docker (4.3.0)
+  gpg (0.3.0)
+    yum-epel (>= 0.0.0)
   habitat (0.57.0)
   homebrew (4.3.0)
   mingw (2.0.2)
     seven_zip (>= 0.0.0)
   seven_zip (3.0.0)
     windows (>= 0.0.0)
-  terraform (1.0.3)
-    ark (>= 2.0)
-    build-essential (~> 8.0)
+  terraform (2.1.1)
+    ark (~> 3.1)
+    gpg (~> 0.3)
   vagrant (0.9.1)
     dmg (>= 2.2.2)
   virtualbox (2.1.0)
@@ -56,3 +58,4 @@ GRAPH
     yum (> 3.1)
   windows (4.3.3)
   yum (5.1.0)
+  yum-epel (3.1.0)
