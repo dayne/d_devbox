@@ -11,7 +11,6 @@ atom_apm 'file-watcher'
 atom_apm 'file-icons'
 
 include_recipe 'virtualbox'
-include_recipe 'terraform'
 
 include_recipe 'd_devbox::_packer'
 
@@ -23,11 +22,19 @@ include_recipe 'vagrant'
 
 hab_install 'install habitat'
 
+## include_recipe 'terraform'
+# got annoyed by terraform cookbook too
+tfv = node.default['terraform']['version']
+remote_file ("/tmp/terraform_#{tfv}_linux_amd64.zip") do
+  source "https://releases.hashicorp.com/terraform/#{tfv}/terraform_#{tfv}_linux_amd64.zip"
+  owner 'root'
+  checksum node.default['terraform']['checksum']
+end
 
 # got annoyed by the old chef_dk cookbook
 # using manual install for now
-version = node.default['chefdk']['version']
-remote_file ("/tmp/chefdk-#{version}_amd64.deb") do
+chefdk_version = node.default['chefdk']['version']
+remote_file ("/tmp/chefdk-#{chefdk_version}_amd64.deb") do
   source node.default['chefdk']['url']
   owner 'root'
   checksum node.default['chefdk']['checksum']
