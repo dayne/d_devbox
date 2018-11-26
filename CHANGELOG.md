@@ -6,6 +6,7 @@
 - updates: chefdk 3.5.13, vagrant 2.2.1, packer 1.3.2, terraform 0.11.10
 - removed dependancy on terraform cookbook because it was annoying me
   the same old bug we fixed a year or two ago
+- swap out to my own \_ruby.rb for installing ruby-build and rbenv
 
 ## [0.2.1] - 2018-07-14
 - swap out my branch of the old terraform-cookbook for the new maintained at [hidangwa/chef-terraform](https://github.com/hidangwa/chef-terraform)

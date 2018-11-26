@@ -34,21 +34,24 @@ end
 # got annoyed by the old chef_dk cookbook
 # using manual install for now
 chefdk_version = node.default['chefdk']['version']
-remote_file ("/tmp/chefdk-#{chefdk_version}_amd64.deb") do
+chefdk_deb = "/tmp/chefdk-#{chefdk_version}_amd64.deb"
+remote_file (chefdk_deb) do
   source node.default['chefdk']['url']
   owner 'root'
   checksum node.default['chefdk']['checksum']
+  verify "test -f #{chefdk_deb}" 
 end
 
 dpkg_package 'chefdk' do
-  only_if { File.exist?("/tmp/chefdk-#{version}_amd64.deb")}
-  source "/tmp/chefdk-#{version}_amd64.deb"
+  only_if { File.exist?(chefdk_deb) }
+  source chefdk_deb
   action [ :install, :upgrade ]
 end
-
 
 # install latest docker:
 
 docker_installation 'default' do
   action :create
 end
+
+include_recipe "d_devbox::_ruby"
