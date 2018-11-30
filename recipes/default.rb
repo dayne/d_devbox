@@ -37,9 +37,8 @@ chefdk_version = node.default['chefdk']['version']
 chefdk_deb = "/tmp/chefdk-#{chefdk_version}_amd64.deb"
 remote_file (chefdk_deb) do
   source node.default['chefdk']['url']
-  owner 'root'
   checksum node.default['chefdk']['checksum']
-  verify "test -f #{chefdk_deb}" 
+  owner 'root'
 end
 
 dpkg_package 'chefdk' do

@@ -1,6 +1,9 @@
 =======
 ## Unreleased
 
+## [0.3.1] - 2018-11-30
+- remove chefdk file verify line
+
 ## [0.3.0] - 2018-11-21
 - transition to Ubuntu 18.06 
 - updates: chefdk 3.5.13, vagrant 2.2.1, packer 1.3.2, terraform 0.11.10
