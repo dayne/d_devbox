@@ -35,7 +35,7 @@ end
 
 describe command('vagrant --version') do
   its('exit_status') { should eq 0 }
-  its('stdout') { should match '2.2.1' }
+  its('stdout') { should match '2.2.2' }
   its('stderr') { should match '' }
 end
 

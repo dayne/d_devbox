@@ -52,5 +52,3 @@ end
 docker_installation 'default' do
   action :create
 end
-
-include_recipe "d_devbox::_ruby"

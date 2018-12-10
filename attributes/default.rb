@@ -1,4 +1,4 @@
-default['vagrant']['version'] = '2.2.1'
+default['vagrant']['version'] = '2.2.2'
 default['chefdk']['version'] = '3.5.13'
 
 default['packer']['version'] = '1.3.2'

@@ -1,8 +1,10 @@
 =======
 ## Unreleased
 
-## [0.3.1] - 2018-11-30
+## [0.3.2] - 2018-11-30
 - remove chefdk file verify line
+- remove \_ruby  
+- vagrant 2.2.2
 
 ## [0.3.0] - 2018-11-21
 - transition to Ubuntu 18.06 
