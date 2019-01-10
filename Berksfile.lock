@@ -12,7 +12,7 @@ DEPENDENCIES
     ref: 2f682a1
   virtualbox
     git: https://github.com/dayne/virtualbox-cookbook
-    revision: 3a9b8681d3d3bee06d710cd5a75a4c065e194d21
+    revision: 38f0bf3e359c19911a3630bbbb618768f23aa8a2
 
 GRAPH
   apache2 (5.2.1)
@@ -20,24 +20,24 @@ GRAPH
   atom (0.2.2)
     apt (> 3.0)
     homebrew (< 5.0.0)
-  d_devbox (0.3.1)
-    apt (>= 0.0.0)
+  d_devbox (0.4.0)
     atom (>= 0.2.0)
-    docker (>= 2.15.25)
-    habitat (>= 0.3.0)
-    vagrant (>= 0.7.0)
+    docker (>= 0.0.0)
+    docker_compose (>= 0.0.0)
+    habitat (>= 0.0.0)
+    vagrant (>= 0.0.0)
     virtualbox (>= 2.1)
   dmg (4.1.1)
-  docker (4.6.7)
+  docker (4.9.0)
+  docker_compose (0.1.1)
   gpg (0.3.0)
     yum-epel (>= 0.0.0)
   habitat (0.67.0)
   homebrew (4.3.0)
   vagrant (0.9.1)
     dmg (>= 2.2.2)
-  virtualbox (2.1.0)
+  virtualbox (2.1.1)
     apache2 (>= 0.0.0)
-    apt (>= 0.0.0)
     dmg (>= 0.0.0)
     windows (>= 0.0.0)
     yum (> 3.1)

@@ -52,3 +52,5 @@ end
 docker_installation 'default' do
   action :create
 end
+
+include_recipe 'docker_compose::installation'

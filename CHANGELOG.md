@@ -1,6 +1,10 @@
 =======
 ## Unreleased
 
+## [0.4.0] - 2019-01-10
+- add docker compose
+- remove apt dependency
+
 ## [0.3.2] - 2018-11-30
 - remove chefdk file verify line
 - remove \_ruby  

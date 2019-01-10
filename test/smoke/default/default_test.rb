@@ -48,3 +48,15 @@ describe command('docker --version') do
   its('exit_status') { should eq 0 } 
   its('stdout') { should match 'Docker' }
 end
+
+#
+# docker-compose installed correctly
+#
+describe directory('/etc/docker-compose') do
+  it { should exist }
+end
+
+describe command('/usr/local/bin/docker-compose version') do
+  its('stdout') { should match 'docker-compose version' }
+  its('stdout') { should cmp >= '1.22' }
+end
